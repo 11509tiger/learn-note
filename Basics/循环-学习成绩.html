@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习成绩的总/平均分</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        var average = 0;
+        var num = prompt('请输入总的班级人数：');
+        for (i = 1; i <= num; i++) {
+            var score = prompt('请输入第' + i + '个学生的成绩：');
+            sum = sum + parseFloat(score);
+        }
+        average = sum / num;
+        alert('班级总的成绩是：' +sum );
+        alert('班级总的平均分是：' +average );
+    </script>
+</body>
+</html>

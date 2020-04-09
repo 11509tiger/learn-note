@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>求和跟平均值</title>
+</head>
+<body>
+    <script>
+        var arr = [2, 3, 4, 5];
+        var sum = 0;
+        var average = 0;
+        for (var i = 0; i < arr.length; i++) {
+            sum += arr[i];  //加的是数组里面的元素，而不是计数器i
+        }
+        average = sum / arr.length;  //除的是数组长度 就是 数组的个数
+        console.log(sum, average);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筛选出数组中大于10的整数</title>
+</head>
+<body>
+    <script>
+        // 方法1
+        var arr = [2, 12, 3, 23, 4, 56];
+        var newArr = [];
+        var j = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > 10) {
+                newArr[j] = arr[i];  // 新数组的长度应该从0 开始 所以声明了一个新的变量j 
+                j++;   // 然后让它自加1  
+            }
+        }
+        console.log(newArr);
+        // 方法2
+        var arr = [2, 12, 3, 23, 4, 56];
+        var newArr = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > 10) {
+                newArr[newArr.length] = arr[i];  // 新数组的长度应该从0 开始   而新数组的索引号也是从0开始
+            }
+        }
+        console.log(newArr);
+    </script>
+</body>
+</html>

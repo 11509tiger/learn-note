@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翻转数组</title>
+</head>
+<body>
+    <script>
+        var arr = [2, 34, 5, 67, 8, 90];
+        var newArr = [];
+        for (var i = arr.length -1; i >= 0; i--) {  // 数组长度 arr.length - 1 对应的刚好是 翻转后的 新数组 的索引号 即第一个                                               变成了最后一个
+            newArr[newArr.length] = arr[i];
+        }
+        console.log(newArr);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>判断闰年</title>
+</head>
+<body>
+    <script>
+        // 1.算法：能被4整除且不能整除100的为闰年，或者能够被400整除；
+        // 2.弹出prompt输入框，让用户输入年份，把这个值取过来保存带变量中；
+        // 3.使用if语句来判断是否是闰年；
+        // 4.注意里面的 且&& 还有 或者|| 的写法。判断整除的方法取余为0.    
+        var year = prompt('请输入您要查询的年份：');
+        if (year %4 == 0 && year %100 !=0 || year %400 ==0) {
+            alert('您输入的是闰年！');
+        } else {
+            alert('您输入的是平年！');
+        }
+    </script>
+    
+
+</body>
+</html>

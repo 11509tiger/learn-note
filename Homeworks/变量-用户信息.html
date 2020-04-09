@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户信息图</title>
+</head>
+<body>
+    <script>
+        // 1.先定义一个临时变量 temp
+        // 然后把变量1 传给临时变量 temp
+        // 再把变量2 传给 变量1
+        // 最后把临时变量 temp 里面的值传给变量2
+        var temp;
+        var num1 = "青苹果";
+        var num2 = "红苹果";
+        temp = num1;
+        num1 = num2;
+        num2 = temp; 
+        console.log(num1);
+        console.log(num2);
+        
+        // 2.依次询问并获取用户的姓名、年龄、性别、地址、工资，并打印用户信息图
+        var myName = prompt('请输入您的姓名：');
+        var age = prompt('请输入您的年龄：');
+        var sex = prompt('请输入您的性别：');
+        var adress = prompt('请输入您的地址：');
+        var salary = prompt('请输入您的工资：');
+        console.log('姓名：' + myName);
+        console.log('年龄：' + age);
+        console.log('性别：' + sex);
+        console.log('地址：' + adress);
+        console.log('工资：' + salary);
+    </script>
+</body>
+</html>

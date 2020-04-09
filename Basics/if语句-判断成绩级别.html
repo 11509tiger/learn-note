@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>判断成绩级别</title>
+</head>
+<body>
+    <script>
+        // 1.按照从大到小的思路；
+        // 2.弹出prompt 输入框，让用户输入分数（score），把这个值取过来保存到变量中，
+        // 3.使用多分支语句if-else-if 来分别判断不同的值；
+        var score = prompt('请输入您要查询的成绩：');
+        if (score >= 90) {
+            alert('您的成绩级别是A哦！');
+        } else if (score >= 80) {
+            alert('您的成绩级别是B哦！');
+        } else if (score >= 70) {
+            alert('您的成绩级别是c哦！');
+        } else if (score >= 60) {
+            alert('您的成绩级别是D哦！');
+        } else {
+            alert('您的成绩不及格哦！');
+        }
+    </script>
+</body>
+</html>

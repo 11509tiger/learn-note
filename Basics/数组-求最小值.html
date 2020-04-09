@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>求数组的最小值</title>
+</head>
+<body>
+    <script>
+        var array = [4, 2, 1, 43, 12];
+        for (var i = 0; i < array.length; i++) {
+            if (array[0] > array[i]) {  // 如果数组的第一个元素 比 后面的元素大
+                var min = array[i];  // 则将它赋值给最小值
+            }
+        }
+        console.log(min);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-100之间的累加和</title>
+</head>
+<body>
+    <script>
+        function getSum() {
+            var sum = 0;
+            for (var i = 1; i <= 100; i++) {
+                sum += i;     // 利用for 循环来求 1-100之间的累加和  然后再放在函数里
+            }
+            console.log(sum);
+        }
+        getSum();           // 这里是调用函数
+    </script>
+</body>
+</html>

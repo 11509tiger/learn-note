@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询水果价格</title>
+</head>
+<body>
+    <script>
+        // 1.弹出prompt 输入框，让用户输入水果名称，把这个值取过来保存到变量中；
+        // 2.将这个变量作为switch括号里的表达式；
+        // 3.case 后面的值写几个不同的水果价格，要加引号；
+        // 4.弹出不同价格即可。
+        // 5.注意每个case 后面要加break
+        // 6.将default 设置为没有此水果。
+
+        var fruit = prompt('请输入您要查询的水果：');
+        switch (fruit) {
+            case '苹果':
+                alert('苹果的价格是3.5元/斤哦！');
+                break;
+            case '香梨':
+                alert('香梨的价格是6元/斤哦！');
+                break;
+            case '芒果':
+                alert('芒果的价格是7元/斤哦！');
+                break;
+            case '榴莲':
+                alert('苹果的价格是35元/斤哦！');
+                break;
+            case '龙眼':
+                alert('龙眼的价格是12元/斤哦！');
+                break;
+            case '荔枝':
+                alert('荔枝的价格是10元/斤哦！');
+                break;
+            default:
+                alert('不好意思，我们没有这种水果！');
+                break;
+        }
+    </script>
+</body>
+</html>

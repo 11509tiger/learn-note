@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交换两个变量的值</title>
+</head>
+<body>
+    <script>
+        // js是编程语言 有很强的逻辑性在里面  实现的思路：先怎么做后怎么做
+ 
+        // 1.先定义一个临时变量 temp
+        // 2.然后把变量1 传给临时变量 temp
+        // 3.再把变量2 传给 变量1
+        // 4.最后把临时变量 temp 里面的值传给变量2
+        var temp;
+        var num1 = "青苹果";
+        var num2 = "红苹果";
+        temp = num1;
+        num1 = num2;
+        num2 = temp; 
+        console.log(num1);
+        console.log(num2);
+    </script>
+</body>
+</html>

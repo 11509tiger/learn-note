@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利用函数求任意两数间的和</title>
+</head>
+<body>
+    <script>
+        function getSum(num1, num2) {       // 这里定义了两个形参
+            var sum = 0;
+            for (i = num1; i <= num2; i++) {            // num1 是第一个数，num2 是第二个数，累加和是递增
+                sum += i;
+            }
+            console.log(sum);
+            
+        }
+        getSum(2, 50);          // 这里调用了两个实参 然后传递回去给 形参 接着再执行 打印
+        getSum(1, 100);    
+    </script>
+</body>
+</html>
